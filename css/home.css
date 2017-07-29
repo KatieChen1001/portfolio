@@ -1,0 +1,87 @@
+html { 
+  background: url(../img/blogHome.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.site-branding {
+	display: inline-block;
+}
+
+.site-branding h1{
+	font-family: 'Cormorant Garamond', serif;
+	color: white;
+}
+
+.horizontal-nav-bar{
+	float: right;
+}
+
+.horizontal-nav-bar ul{
+	list-style-type: none;
+
+}
+
+.horizontal-nav-bar-item {
+	float: left;
+	font-size: 1.6vw; 
+}
+
+li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+	padding-right: 1.6vw;
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover{
+	color: white;
+}
+
+.collection-nav-item-span {
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 4vw; 
+}
+
+.collection-nav-bar-wrapper {
+	position: fixed;
+	top: 40vh;
+	left: 40vw;
+}
+
+.collection-nav-bar {
+	display: flex;
+	align-items: center;
+}
+
+/* Responsive: Media Queries */
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+}
+
+
+
+
+
+
+
+
