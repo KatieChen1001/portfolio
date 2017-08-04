@@ -6,13 +6,25 @@ html {
   background-size: cover;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header-wrapper {
+	vertical-align: middle;
+	line-height: 1;
+}
+
 .site-branding {
 	display: inline-block;
+	padding-left: 1.6vw;
 }
 
 .site-branding h1{
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'open sans', Ariel;
 	color: white;
+	letter-spacing: 0.2vw;
 }
 
 .horizontal-nav-bar{
@@ -21,13 +33,24 @@ html {
 
 .horizontal-nav-bar ul{
 	list-style-type: none;
-
+	margin-top: 28px;
 }
 
 .horizontal-nav-bar-item {
 	float: left;
 	font-size: 1.6vw; 
 }
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	cursor: pointer;
+}
+
 
 li a{
 	text-decoration: none;
@@ -37,18 +60,10 @@ li a{
 	padding-right: 1.6vw;
 }
 
-a:link {
-	color: white;
-	text-decoration: none;
-}
-
 a:visited {
 	color: white;
 }
 
-a:hover{
-	color: white;
-}
 
 .collection-nav-item-span {
 	font-family: 'Cormorant Garamond', serif;
@@ -57,16 +72,38 @@ a:hover{
 
 .collection-nav-bar-wrapper {
 	position: fixed;
-	top: 40vh;
-	left: 40vw;
+	top: 35vh;
+	left: 36vw;
+	text-align: center;
 }
 
-.collection-nav-bar {
-	display: flex;
-	align-items: center;
+.collection-nav-item {
+	padding-bottom: 1.3em;
 }
 
-/* Responsive: Media Queries */
+
+/* ========================= Footer ======================= */
+
+/*footer {
+	position: fixed;
+	bottom: 15vh;
+	left: 45vw;
+}
+
+.social-icon-container {
+	display: block;
+	margin: auto;
+}
+.social-icon-container span {
+	display: block;
+	color: white;
+	font-family: 'open sans', sans serif; 
+}*/
+
+
+
+
+/* ===================== Responsive: Media Queries ====================== */
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
