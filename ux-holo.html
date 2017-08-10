@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KATIE CHEN</title>
+	<link rel="stylesheet" type="text/css" href="css/proj-content.css">
+	<!-- Import Font Awesome Icons -->
+	<!-- <script src="https://use.fontawesome.com/04fd99af82.js"></script> -->
+	<!-- Import Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300,400,600,700|Lato:300,400,700|Roboto+Slab:100,300,400,700" rel="stylesheet">	
+	<!-- Insert metadata info -->
+	<meta charset="utf-8">
+	<meta name = "description" content="This is Katie Chen's portfolio website">
+	<meta name="author" content="Katie Chen">
+	<!-- Initiate Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+	<!-- ======================== project title animation ======================== -->
+	<div class="proj-title-ani-wrapper">
+		<h1>HOLOGALSS</h1>
+
+	</div>
+
+	<!-- ======================== project roadmap ======================== -->
+	<a href="https://placeholder.com">
+		<img src="http://via.placeholder.com/800x350" class="proj-roadmap">
+	</a>
+
+	<!-- ======================== keywords ======================== -->
+	<div class="proj-keywords">
+		<h3>KEYWORDS</h3>
+		<h6>Mixed Reality / User Research / Iteration Diagram / Comparative Analysis /
+		Table of Elements / User Flow Diagram / Digital Visualization for MR</h6>
+	</div>
+
+	<div class="proj-content-wrapper">
+		<h3>PROJECT CHALLENGE</h3>
+		
+		<p>Design a proof of concept for a holographic portfolio that covers the end-to-end experience of an artist’s portfolio to be viewed on the HoloLens. This is not about creating an “artwork” for the HoloLens, but rather a way to interact with different works in mixed reality on the HoloLens. For the purpose of the demo, the user is a curator. The approach should be based on the experience of a studio visit.
+
+			The holographic portfolio proof of concept must include experiences for the following types of artwork: 1) Painting or Photograph; 2) Sculpture; 3) Performance Art (this can include theatre, dance, and other performance art works) or Interactive Installation or Game; 4) Film/Video
+
+			The portfolio must also include a way to access the following items: 1) Artist Bio; 2) Contact; 3) Artist Statement; 4) Upcoming Exhibitions and Exhibition History
+
+			The core of the challenge is to investigate how to present, enhance, and augment artwork experientially.  By adding layers of information and data into reality, the mixed reality platform of the HoloLens creates opportunities to combine interactive objects with the real environment, to augment and extend human sensing.
+		</p>
+
+		<h3>TEAM</h3>
+		<p>We are an interdisciplinary team of 7, with background in design, programming and psychology. Team members are Anuj Bakshi, Katie Chen, Lu Dai, Cindy Hu, Levi Mollison, Akshay Narvekar, Lillian Warner.
+		</p>
+
+		<h3>DESIGN PROCESS</h3>
+		<h6>User Research and Brainstorming</h6>
+		<p>We started off with interviewing curators and visiting artists’ studios to understand the curatorial process and art studio visit process. We were in conversation with:</p>
+
+			<ol>
+				<li>Sarah Humphreville, Senior Curatorial Assistant at the Whitney Museum of American Art</li>
+				<li>Emily King, Archivist at the Roy Lichtenstein Foundation</li>
+				<li>Richard Sigmund, Artist & Art Handler</li>
+			</ol>
+
+		<p>Based on our interviews, we obtained a basic understanding of the goals and needs from both the curator and the artist side. We then synthesised our research outcome and compiled the information into an affinity diagram.</p>
+
+
+		<h6>Affinity Diagram</h6>
+		<img class="imgThumbnail" src="img/proj/hologlass/AffinityDiagram.png" width="330px" height="450px">
+		<!-- The Modal -->
+		<div id="proj-img-modal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="imgModal">
+		  <div id="caption"></div>
+		</div>
+
+		<h6>Defining Concept</h6>
+		<p>We final proof of concept is called the “Immersive Web”. Inspired by a scene in the Iron Man movie, the Immersive Web shows a web diagram of artists, with visualizations of their work connected to their name in a web format.</p>
+
+		<div class="imgPolaroid">
+			<img src="img/proj/hologlass/IronMan.jpg" width="400px" height="auto">
+			<div class="captionWrapper">
+				<span>Element Scene in Iron Man</span>
+			</div>
+		</div>
+
+		<div class="imgPolaroid">
+			<img class="border-bottom" src="img/proj/hologlass/ImmersiveWebSketch.jpg" width="400px" height="auto">
+			<div class="captionWrapper">
+				<span>Immersive Web Sketch</span>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<script type="text/javascript">
+		// Get the modal
+		var modal = document.getElementById('proj-img-modal');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = $('.imgThumbnail');
+		var modalImg = $("#imgModal");
+		var captionText = document.getElementById("caption");
+		$('.imgThumbnail').click(function(){
+		    modal.style.display = "block";
+		    var newSrc = this.src;
+		    modalImg.attr('src', newSrc);
+		    captionText.innerHTML = this.alt;
+		});
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	</script>
+
+
+
+
+</body>
+</html>

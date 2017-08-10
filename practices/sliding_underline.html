@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sliding-underline</title>
+
+<style>
+
+
+/*	============= below is for slide underline middle out */
+	body{
+		background-color: #AEAEAE
+	}
+.sliding-middle-out {
+	display: inline-block;
+/*	position: relative;*/
+/*	padding-bottom: 3px;*/
+}
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: 10px; /*	this will add spacing between the text and the underline */
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: white;
+}	
+	
+	
+/*	below is for slide in and slide out effect for the nav bar */
+	
+	
+.sliding-u-l-r-l {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+/*	this adds spacing between text and sliding underline */
+}
+.sliding-u-l-r-l:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px; /*	thickness of the sliding line */
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+	margin-top: 3px;
+}
+.sliding-u-l-r-l:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: white;
+    transition: width .5s ease;
+	margin-top: 3px;
+}
+.sliding-u-l-r-l:hover:before {
+    width: 100%;
+    background: white;
+    transition: width .5s ease;
+}
+.sliding-u-l-r-l:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+</style>
+</head>
+
+
+<body>
+<h1 class="sliding-middle-out">This is a H1 Heading to be underlined</h1>
+<h1 class="sliding-u-l-r-l">This is a heading for slide in and slide out </h1>
+</body>
+</html>

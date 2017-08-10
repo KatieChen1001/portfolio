@@ -1,0 +1,54 @@
+#main{
+            width: 800px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+
+        /* navigation styles */
+        
+        .elevator-scroll{
+            position: fixed;
+            top: 40%;
+            right: 3%;
+            list-style-type: none;
+        }
+        
+        .elevator-scroll li{
+            width: 10px;
+            padding: 10px;
+            margin-bottom: 1px;
+            background-color: #111;
+            border-left: 10px solid #333;
+            cursor: pointer;
+        }
+
+        .active{
+            color: #FFF;
+            border-left: 20px solid #FFF;
+            line-height: 30px
+        }
+		
+		.section{
+            height: 100vh;
+            position: relative;
+        }
+
+        .photo-proj-cover {
+        	position: absolute;
+        	top:50%;
+        	left: 50%;
+        	transform: translate(-50%, -50%);
+        	width: 90%;
+        	height: auto;
+        }
+
+        .photo-proj-title{
+           font-family: 'Cormorant Garamond', serif;
+           font-size: 48px;
+           color: black;
+           position: relative;
+           top: 50%;
+           left: 
+
+        }

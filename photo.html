@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KATIE CHEN</title>
+		<!-- Import Font Awesome Icons -->
+	<script src="https://use.fontawesome.com/04fd99af82.js"></script>
+	<!-- Import Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans:300,400,600,700|Lato:300,400|Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<!-- Insert metadata info -->
+	<meta charset="utf-8">
+	<meta name = "description" content="This is Katie Chen's portfolio website">
+	<meta name="author" content="Katie Chen">
+	<!-- Initiate Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Link to Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/photo.css">
+	
+</head>
+<body>
+
+
+<header>
+	<div class="header-wrapper">
+		
+			<div class="site-branding">
+				<img src="img/site-logo.svg" width="36px" height="auto">
+			</div>
+			
+			<!-- header horizontal nav -->
+			<div class="horizontal-nav-bar-wrapper">
+				<nav>
+					<ul class="horizontal-nav-bar">
+						<li class="horizontal-nav-bar-item">
+							<a href="#">
+							<span class="slide-in-slide-out">About</span></a>
+						</li>
+						<li class="horizontal-nav-bar-item">
+							<a href="file:///Users/katiechen/portfolio/photo.html">
+							<span class="slide-in-slide-out">Photo</span></a>
+						</li>
+						<li class="horizontal-nav-bar-item">
+							<a href="#">
+							<span class="slide-in-slide-out">Blog</span></a>
+						</li>
+						<li class="horizontal-nav-bar-item">
+							<a href="file:///Users/katiechen/portfolio/project.html">
+							<span class="slide-in-slide-out">Projects</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+</header>
+
+
+
+	<div>
+        <ul class="elevator-scroll">
+            <li class="elevator-scroll-btn" id="floor5Btn">5</li>
+            <li class="elevator-scroll-btn" id="floor4Btn">4</li>
+            <li class="elevator-scroll-btn" id="floor3Btn">3</li>
+            <li class="elevator-scroll-btn" id="floor2Btn">2</li>
+            <li class="elevator-scroll-btn" id="floor1Btn">1</li>
+        </ul>
+        <div id="main">
+            <div class="section" id="floor5Panel">
+                <img src="img/photo/IMG_3050.jpg" class="photo-proj-cover">
+                <h2 class="photo-proj-title">Jerusalem</h2>
+            </div>
+            <div class="section" id="floor4Panel">
+                <img src="img/photo/IMG_2075.jpg" class="photo-proj-cover">
+            </div>
+            <div class="section" id="floor3Panel">
+                <img src="img/photo/IMG_2217.jpg" class="photo-proj-cover">
+            </div>
+            <div class="section" id="floor2Panel">
+                <img src="img/photo/IMG_2202.jpg" class="photo-proj-cover">
+            </div>
+            <div class="section" id="floor1Panel">
+                <img src="img/photo/IMG_2202.jpg" class="photo-proj-cover">
+            </div>
+        </div>
+    </div>
+    <!-- This example uses GreenSock.js and some of its plugins along with jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        /********************************************************************
+        Make the items fade in on load
+        ********************************************************************/
+        TweenLite.from($("body"), 0.5, {autoAlpha:0});
+
+        //animate our menu in from off the screen to the right
+        TweenLite.from($("ul"), 0.5, {right:-500,delay:0.5});
+
+        /********************************************************************
+        Grab Each Button by ID and assign them to variables
+        ********************************************************************/
+
+        var $floor1Btn = $("#floor1Btn"),
+        $floor2Btn = $("#floor2Btn"),
+        $floor3Btn = $("#floor3Btn"),
+        $floor4Btn = $("#floor4Btn"),
+        $floor5Btn = $("#floor5Btn"),
+
+        $navButtons = $(".elevator-scroll-btn");
+
+        /********************************************************************
+        Add and remove active classes on mouse enter mouse leave
+        ********************************************************************/
+        $navButtons.mouseenter(function(e){
+            //console.log(e.target);
+            TweenLite.to(this, 0.2, {className:"+=active"});
+        });
+
+        $navButtons.mouseleave(function(e){
+            //console.log(e.target);
+            TweenLite.to(this, 0.2, {className:"-=active"});
+        });
+
+        /********************************************************************
+        Set the scroll position to the top of each "floor's" divs
+        ********************************************************************/
+
+        //using jQuery we can get the screen position in pixels of each of our floor divs
+
+        console.log($("#floor1Panel").offset().top);
+
+        //assign an HTML5 data attribute to each of our buttons with the top position of the correstponding floor section top positions
+
+        $floor5Btn.attr("data-scrollPos", $("#floor5Panel").offset().top);
+        $floor4Btn.attr("data-scrollPos", $("#floor4Panel").offset().top);
+        $floor3Btn.attr("data-scrollPos", $("#floor3Panel").offset().top);
+        $floor2Btn.attr("data-scrollPos", $("#floor2Panel").offset().top);
+        $floor1Btn.attr("data-scrollPos", $("#floor1Panel").offset().top);
+
+        //assign a function on click to each of our vertical navigation buttons
+
+        $navButtons.click(function(){
+            var myScrollPostion = $(this).attr("data-scrollPos");
+            console.log(myScrollPostion);
+            TweenLite.to(window, 2, {scrollTo: myScrollPostion, ease:Back.easeOut});
+        });
+
+        //scroll to a floor of our choosing on load
+        var initialFloor = $("#floor2Btn").attr("data-scrollPos");
+        TweenLite.to(window, 1, {scrollTo:initialFloor});
+    });
+    </script>
+
+</body>
+</html>

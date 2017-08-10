@@ -7,6 +7,8 @@
 	<script src="https://use.fontawesome.com/04fd99af82.js"></script>
 	<!-- Import Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Open+Sans" rel="stylesheet">	
+	<!-- Import favicon (icon image next to website tile on the browser tab) -->
+	<link rel="icon" type="image/png" href="img/Logo.png">
 	<!-- Insert metadata info -->
 	<meta charset="utf-8">
 	<meta name = "description" content="This is Katie Chen's portfolio website">
@@ -19,32 +21,32 @@
 	<header>
 		
 		<div class="header-wrapper">
-		<!-- This will later be replaced by a LOGO -->
-		<div class="site-branding">
-			<h1 class="site-title">
-				<span class="site-title">KATIE</span>
-			</h1>		
-		</div>
 		
-		<!-- header horizontal nav -->
-		<div class="horizontal-nav-bar">
-			<nav class="horizontal-nav-bar">
-				<ul class="horizontal-nav-bar">
-					<li class="horizontal-nav-bar-item">
-						<a href="#">About</a>
-					</li>
-					<li class="horizontal-nav-bar-item">
-						<a href="#">Photo</a>
-					</li>
-					<li class="horizontal-nav-bar-item">
-						<a href="#">Blog</a>
-					</li>
-					<li class="horizontal-nav-bar-item">
-						<a href="#">Projects</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+			<div class="site-branding">
+				<img src="img/site-logo.svg" width="36px" height="auto">
+			</div>
+			
+			<!-- header horizontal nav -->
+			<div class="horizontal-nav-bar-wrapper">
+				<nav>
+					<ul class="horizontal-nav-bar">
+						<li class="horizontal-nav-bar-item">
+							<a href="#"><span class="slide-in-slide-out">About</span></a>
+						</li>
+						<li class="horizontal-nav-bar-item">
+							<a href="file:///Users/katiechen/portfolio/photo.html">
+							<span class="slide-in-slide-out">Photo</span></a>
+						</li>
+						<li class="horizontal-nav-bar-item">
+							<a href="#"><span class="slide-in-slide-out">Blog</span></a>
+						</li>
+						<li class="horizontal-nav-bar-item">
+							<a href="file:///Users/katiechen/portfolio/project.html">
+							<span class="slide-in-slide-out">Projects</span></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 
 		</div>
 	</header>
@@ -64,7 +66,7 @@
 		<nav class="collection-nav-bar">
 			<div class="collection-nav-item" id="photography">
 				<a href="#">
-					<span class="collection-nav-item-span">
+					<span class="collection-nav-item-span slide-middle-out">
 						PHOTOGRAPHY
 					</span>
 				</a>
@@ -72,16 +74,16 @@
 			
 			<div class="collection-nav-item" id="blog">
 				<a href="#">
-					<span class="collection-nav-item-span">
+					<span class="collection-nav-item-span slide-middle-out">
 						BLOG
 					</span>
 				</a>
 			</div>
 			
 			<div class="collection-nav-item" id="project">
-				<a href="#">
-					<span class="collection-nav-item-span">
-						PROJECT
+				<a href="file:///Users/katiechen/portfolio/project.html">
+					<span class="collection-nav-item-span slide-middle-out">
+						PROJECTS
 					</span>
 				</a>
 			</div>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	    <style type="text/css">
+        body{
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 300; 
+            margin-top: 40px;
+            color: #FFF;
+            background-color: black;
+        }
+
+        h2{
+           font-weight: 400; 
+           font-size: 48px;
+           border-bottom: 2px solid #CCC;
+        }
+
+        #main{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .section{
+            padding: 20px 0 80px 0;
+            height: 100vh;
+        }
+
+        /* navigation styles */
+        
+        ul{
+            position: fixed;
+            top: 40%;
+            right: 0px;
+            list-style-type: none;
+        }
+        
+        li{
+            width: 30px;
+            padding: 10px;
+            margin-bottom: 1px;
+            background-color: #111;
+            border-left: 10px solid #333;
+            cursor: pointer;
+        }
+
+        .active{
+            color: #FFF;
+            border-left: 20px solid #FFF;
+            line-height: 30px
+        }
+        </style>
+</head>
+<body>
+<div>
+        <ul>
+            <li id="floor5Btn"><a href="#floor5Panel">5</a></li>
+            <li id="floor4Btn"><a href="#floor4Panel">4</a></li>
+            <li id="floor3Btn"><a href="#floor3Panel">3</a></li>
+            <li id="floor2Btn">2</li>
+            <li id="floor1Btn">1</li>
+        </ul>
+        <div id="main">
+            <div class="section" id="floor5Panel">
+                <h2>FLOOR 5</h2>
+                <h4>
+                	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id ultrices ante. Integer aliquet luctus consectetur. Nullam a facilisis mi, sit amet lacinia ipsum. Morbi et diam vitae massa finibus ullamcorper sed sit amet magna. Quisque ultrices metus non risus luctus rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus porta sem id nunc molestie cursus. Vestibulum eleifend ac est id dapibus. Aliquam erat volutpat.
+                </h4>
+            </div>
+            <div class="section" id="floor4Panel">
+                <h2>FLOOR 4</h2>
+                <h4>
+                	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+					The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </h4>
+            </div>
+            <div class="section" id="floor3Panel">
+                <h2>FLOOR 3</h2>
+            </div>
+            <div class="section" id="floor2Panel">
+                <h2>FLOOR 2</h2>
+            </div>
+            <div class="section" id="floor1Panel">
+                <h2>FLOOR 1</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
