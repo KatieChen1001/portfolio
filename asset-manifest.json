@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/korea/static/css/main.de15fa95.chunk.css",
+    "main.js": "/portfolio/korea/static/js/main.f1d5439d.chunk.js",
+    "main.js.map": "/portfolio/korea/static/js/main.f1d5439d.chunk.js.map",
+    "runtime-main.js": "/portfolio/korea/static/js/runtime-main.32464487.js",
+    "runtime-main.js.map": "/portfolio/korea/static/js/runtime-main.32464487.js.map",
+    "static/js/2.b2f6477a.chunk.js": "/portfolio/korea/static/js/2.b2f6477a.chunk.js",
+    "static/js/2.b2f6477a.chunk.js.map": "/portfolio/korea/static/js/2.b2f6477a.chunk.js.map",
+    "index.html": "/portfolio/korea/index.html",
+    "precache-manifest.14163c7e526b7aef32d3d5ddbb69318b.js": "/portfolio/korea/precache-manifest.14163c7e526b7aef32d3d5ddbb69318b.js",
+    "service-worker.js": "/portfolio/korea/service-worker.js",
+    "static/css/main.de15fa95.chunk.css.map": "/portfolio/korea/static/css/main.de15fa95.chunk.css.map",
+    "static/js/2.b2f6477a.chunk.js.LICENSE.txt": "/portfolio/korea/static/js/2.b2f6477a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.32464487.js",
+    "static/js/2.b2f6477a.chunk.js",
+    "static/css/main.de15fa95.chunk.css",
+    "static/js/main.f1d5439d.chunk.js"
+  ]
+}
